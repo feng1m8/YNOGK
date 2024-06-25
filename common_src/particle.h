@@ -34,6 +34,9 @@
 	double expmu22;
 } metrics; */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 
 typedef struct
@@ -240,6 +243,10 @@ void transport_data_out( ptcl *this, out_data * od );
 
 
 double rms( double a_spin );
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
  
