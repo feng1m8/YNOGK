@@ -7,6 +7,10 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+double __attribute__((__const__)) creal(double _Complex);
+double __attribute__((__const__)) cimag(double _Complex);
+double _Complex csqrt (double _Complex);
+
 #define max(a, b) ((a)>(b)?(a):(b))
 #define sq(a) pow((a), 2)
 #define sq3(a) pow((a), 3)
