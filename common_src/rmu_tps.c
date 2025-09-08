@@ -237,6 +237,11 @@ int radiustp( ptcl * this )
 					this->r_tp1 = creal( this->rbb[2] );
 					this->r_tp2 = creal( this->rbb[3] );
 					this->cases = 2;
+				} else if ( fabs( this->robs - creal( this->rbb[3] ) ) <= 1.e-10 ) {
+					this->r_tp1 = creal( this->rbb[2] );
+					this->r_tp2 = creal( this->rbb[3] );
+					this->cases = 2;
+					this->robs_eq_rtp = true;
 				} else {
 					if ( creal( this->rbb[1] ) > this->rhorizon 
 					&& this->robs <= creal( this->rbb[1] ) ) {
