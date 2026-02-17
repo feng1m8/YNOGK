@@ -7,7 +7,9 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+#ifndef max
 #define max(a, b) ((a)>(b)?(a):(b))
+#endif
 #define sq(a) pow((a), 2)
 #define sq3(a) pow((a), 3)
 
